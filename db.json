@@ -4,7 +4,7 @@
     "desc": "",
     "featured": true,
     "blog": false,
-    "link": true,
+    "link": false,
     "news:": true,
     "image": "https://uploads-ssl.webflow.com/6097e0eca1e875de53031ff6/60e802a6ec51c8b35261e694_analytics-bootcamp%20fianljpg-p-800.jpeg",
     "url": "https://www.patika.dev/programlar/trendyol-data-analytics-bootcamp"
@@ -35,7 +35,7 @@
       "featured": true,
       "blog": true,
       "link": true,
-      "news:": true,
+      "news:": false,
       "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
       "url": "https://dmitripavlutin.com/javascript-variables-best-practices/#1-prefer-const-otherwise-use-let"
     },
@@ -44,7 +44,7 @@
       "desc": "",
       "featured": true,
       "blog": true,
-      "link": true,
+      "link": false,
       "news:": true,
       "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
       "url": "https://dmitripavlutin.com/javascript-variables-best-practices/#1-prefer-const-otherwise-use-let"
