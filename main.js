@@ -1,3 +1,4 @@
+
 // data comes from the JSON
 
 let ourRequest = new XMLHttpRequest();
@@ -30,14 +31,12 @@ function renderHTML(source){
         let r3 = Math.floor(Math.random() * source.length);
 
         let listItem = `
-
-            <li class="list-group-item">${source[r].name}</li>
-            <li class="list-group-item">${source[r2].name}</li>
-            <li class="list-group-item">${source[r3].name}</li>
+            
+          
     
-                        `;
-        let list = document.querySelector("#list");
-        list.insertAdjacentHTML("beforeend", listItem);
+                        `;// bunlar değişecek ${source[r].name}
+        // let list = document.querySelector("#list");
+        // list.insertAdjacentHTML("beforeend", listItem);
 
     // Okuma listesi anuel random
    
@@ -64,9 +63,10 @@ function renderHTML(source){
         
             <div class="col-sm-4">
             <div class="card shadow p-2 mb-2 bg-white rounded">
-            <img src="${source[i].image}" style="width: 175px;" class="card-img-top" alt="...">
+            <img src="${source[i].image}" style="width: 250%; height: 200%; " class="card-img-top img-fluid" alt="...">
             <div class="card-body">
                 <p class="card-title">${source[i].name}</p>
+                <p class="card-title muted">${source[i].desc}</p>
                 <a href="${source[i].url}" class="btn btn-outline-info btn-sm">yazıyı oku  <i class="bi bi-book"></i></a>
             </div>
             </div>
@@ -85,5 +85,17 @@ function renderHTML(source){
 
 
 
+
+
+
+  const words = ['javascript', 'html', 'css', 'bootstrap', 'react'];
+  let word = document.getElementById('word');
+  let seconds = 200;
+  let i = 0;
+  setInterval(() => {
+      if (i == words.length) i = 0;
+      word.innerHTML =  words[i];
+      i++;
+  }, seconds);
 
 

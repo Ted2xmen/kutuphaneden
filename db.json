@@ -2,7 +2,8 @@
   {
     "name": "Trendyol Data Analytics Bootcamp",
     "desc": "",
-    "featured": true,
+    "tool": false,
+    "featured": false,
     "blog": false,
     "link": false,
     "news:": true,
@@ -12,40 +13,66 @@
   {
       "name": "Akinon Python Django Hiring Challenge",
       "desc": "",
-      "featured": true,
+      "tool": false,
+      "featured": false,
       "blog": false,
-      "link": true,
+      "link": false,
       "news:": true,
       "image": "https://uploads-ssl.webflow.com/6097e0eca1e875de53031ff6/60d5fa1a822cc909b14c7032_Hiring%20challenge%20template-p-800.png",
       "url": "https://www.patika.dev/programlar/akinon-python-django-hiring-challenge"
     },
     {
-      "name": "5 Best Practices to Write Quality JavaScript Variables",
-      "desc": "",
+      "name": "Adem İlter",
+      "desc": "front-end developer, designer, youtuber",
+      "tool": false,
       "featured": false,
       "blog": true,
-      "link": true,
-      "news:": true,
-      "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
-      "url": "https://dmitripavlutin.com/javascript-variables-best-practices/#1-prefer-const-otherwise-use-let"
+      "link": false,
+      "news:": false,
+      "image": "https://i.ytimg.com/vi/MT925WUOEuw/maxresdefault.jpg",
+      "url": "https://www.youtube.com/user/ademilter"
     },
     {
-      "name": "Ted",
-      "desc": "",
-      "featured": true,
-      "blog": true,
-      "link": true,
+      "name": "Flickity",
+      "desc": "Touch, responsive, flickable carousels",
+      "tool": true,
+      "featured": false,
+      "blog": false,
+      "link": false,
       "news:": false,
       "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
-      "url": "https://dmitripavlutin.com/javascript-variables-best-practices/#1-prefer-const-otherwise-use-let"
+      "url": "https://flickity.metafizzy.co/"
+    },
+    {
+      "name": "Isotope",
+      "desc": "Filter & sort magical layouts",
+      "tool": true,
+      "featured": false,
+      "blog": false,
+      "link": false,
+      "news:": false,
+      "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
+      "url": "https://isotope.metafizzy.co/"
+    },
+    {
+      "name": "Shuffle",
+      "desc": "Categorize, sort, and filter a responsive grid of items",
+      "tool": true,
+      "featured": false,
+      "blog": false,
+      "link": false,
+      "news:": false,
+      "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
+      "url": "https://vestride.github.io/Shuffle/"
     },
     {
       "name": "5 Best Practices to Write Quality JavaScript Variables",
       "desc": "",
-      "featured": true,
+      "tool": false,
+      "featured": false,
       "blog": true,
       "link": false,
-      "news:": true,
+      "news:": false,
       "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
       "url": "https://dmitripavlutin.com/javascript-variables-best-practices/#1-prefer-const-otherwise-use-let"
     }
