@@ -66,7 +66,7 @@
       "url": "https://vestride.github.io/Shuffle/"
     },
     {
-      "name": "5 Best Practices to Write Quality JavaScript Variables",
+      "name": "Bilmeniz gereken 10 JavaScript dizi(Array) metodu",
       "desc": "",
       "tool": false,
       "featured": false,
@@ -74,7 +74,7 @@
       "link": false,
       "news:": false,
       "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
-      "url": "https://dmitripavlutin.com/javascript-variables-best-practices/#1-prefer-const-otherwise-use-let"
+      "url": "https://medium.com/@yusufgungor/bilmeniz-gereken-10-javascript-dizi-metodu-4753424510fd"
     }
 
 
