@@ -42,7 +42,7 @@ console.log(links);
 
                     let siteItem = `
 
-                    <div class="col-sm-2 col-md-2"> <a href="${links[i].url}"><img src="${links[i].image}" alt="${links[i].name}" class="hover img-thumbnail"style="width: 150%; weight: 80%;"></a></div>  
+                    <div class="col-sm-2 col-md-2"> <a href="${links[i].url}"><img src="${links[i].image}" alt="${links[i].name}" class="hover img-thumbnail"style="width: 200px; weight: 200px;"></a></div>  
 
 
                                     `;

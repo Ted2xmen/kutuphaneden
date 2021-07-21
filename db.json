@@ -198,15 +198,15 @@
       "url": "https://vestride.github.io/Shuffle/"
     },
     {
-      "name": "xxxxxxx",
+      "name": "freecodecamp.org",
       "desc": "Categorize, sort, and filter a responsive grid of items",
       "tool": true,
       "featured": false,
-      "blog": true,
-      "link": false,
+      "blog": false,
+      "link": true,
       "news:": false,
-      "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
-      "url": "https://vestride.github.io/Shuffle/"
+      "image": "https://learn-programming.site/wp-content/uploads/2018/10/free-code-camp.jpg",
+      "url": "https://freecodecamp.org/"
     },
     {
       "name": "11Shuffle",
@@ -220,17 +220,6 @@
       "url": "https://vestride.github.io/Shuffle/"
     },
     {
-      "name": "uuuhuffle",
-      "desc": "Categorize, sort, and filter a responsive grid of items",
-      "tool": true,
-      "featured": false,
-      "blog": true,
-      "link": false,
-      "news:": false,
-      "image": "https://dmitripavlutin.com/static/d56114e024c9b5dab0601e87bbf1f7eb/5b41b/cover-4.webp",
-      "url": "https://vestride.github.io/Shuffle/"
-    },
-    {
       "name": "JavaScript Veri Türleri",
       "desc": "https://onurdayibasi.com/javascript-usage/?d83c6f28b8a4",
       "tool": false,
@@ -240,28 +229,6 @@
       "news:": false,
       "image": "/assets/medium.png",
       "url": "https://medium.com/frontend-development-with-js/javascript-veri-t%C3%BCrleri-739fb8df0ce8"
-    },
-    {
-      "name": "JavaScript Veri Türleri",
-      "desc": "https://onurdayibasi.com/javascript-usage/?d83c6f28b8a4",
-      "tool": false,
-      "featured": false,
-      "blog": true,
-      "link": false,
-      "news:": false,
-      "image": "/assets/medium.png",
-      "url": "https://medium.com/frontend-development-with-js/javascript-veri-t%C3%BCrleri-739fb8df0ce8"
-    },
-    {
-      "name": "ProductHunt",
-      "desc": "Product Hunt is a curation of the best new products, every day",
-      "tool": false,
-      "featured": false,
-      "blog": false,
-      "link": true,
-      "news:": false,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS4HaEE2sBqndqq-HBU9f1BccHXYmSR_-8LWsxYbibfmRj1oUMtHVyid7CNVBpclPjlys&usqp=CAU",
-      "url": "https://www.producthunt.com/"
     },
     {
       "name": "JavaScript Veri Türleri",
@@ -297,15 +264,15 @@
       "url": "https://medium.com/frontend-development-with-js/javascript-veri-t%C3%BCrleri-739fb8df0ce8"
     },
       {
-      "name": "JavaScript Veri Türleri",
-      "desc": "https://onurdayibasi.com/javascript-usage/?d83c6f28b8a4",
+      "name": "CodePen",
+      "desc": "Build, share, and learn JavaScript, CSS, and HTML with our online code editor.",
       "tool": false,
       "featured": false,
       "blog": false,
       "link": true,
       "news:": false,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS4HaEE2sBqndqq-HBU9f1BccHXYmSR_-8LWsxYbibfmRj1oUMtHVyid7CNVBpclPjlys&usqp=CAU",
-      "url": "https://medium.com/frontend-development-with-js/javascript-veri-t%C3%BCrleri-739fb8df0ce8"
+      "image": "https://spiralking.com/wp-content/uploads/2019/04/code4.png",
+      "url": "https://codepen.io/"
     },
     {
       "name": "HackerRank",
