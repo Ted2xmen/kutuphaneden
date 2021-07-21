@@ -13,49 +13,46 @@ ourRequest.send();
 
 function renderHTML(source){
 
-    // data category
-
         let blog = source.filter(e => e.blog === true);
         // console.log(blog);
-
-        let links = source.filter(e => e.link === true);
-        // console.log(links);
-
-     // data category
-
+         let links = source.filter(e => e.link === true);
 
         // let r = Math.floor(Math.random() * source.length);
-        // let r2 = Math.floor(Math.random() * source.length);
-        // let r3 = Math.floor(Math.random() * source.length);
+        // for blog
+console.log(links);
+
 
         
-   
-     // for for blog yazıları
-     for(let six = 0; six < 6; six++) {
+        // for blog yazıları
+        for(let i = blog.length-7; i < blog.length; i++) {
 
-
-
-    };
-
-        // console.log(six+"selam");
-                
-    
-         for(let i = 0; i < blog.length-7; i++) {
-
-        
-            
             let blogItem = `
-                               <li class="list-group-item"><img src="${blog[i].image}" class="img-thumbnail" alt="..." style="width: 40px;" >${blog[i].name}<span>  Reddit</span></li>
-
-                               
-                               
-                             
+            <li class="list-group-item">
+            <img src="${blog[i].image}" class="img-thumbnail" alt="${blog[i].name}" style="width: 40px;">
+            <a href="${blog[i].url}">${blog[i].name}</a>
+          </li>
                             `;
             let blogContainer = document.querySelector('#blog-post');
             blogContainer.insertAdjacentHTML("beforeend", blogItem);
+}; 
 
-        };
+        //for internet siteleri
+
+            for(let i = links.length-6; i < links.length; i++) {
+
+                    let siteItem = `
+
+                    <div class="col-sm-2 col-md-2"> <a href="${links[i].url}"><img src="${links[i].image}" alt="${links[i].name}" class="hover img-thumbnail"style="width: 150%; weight: 80%;"></a></div>  
+
+
+                                    `;
+                    let siteContainer = document.querySelector('#links');
+                    siteContainer.insertAdjacentHTML("beforeend", siteItem);
+            };     
         
+
+
+
 
     // FOR LOOP 
     // for (let i = 0; i < source.length; i++) {
