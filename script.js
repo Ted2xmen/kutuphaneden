@@ -13,9 +13,4 @@ newsLetter.innerHTML = `
 
 
 
-
-
-
-
-
 `;
