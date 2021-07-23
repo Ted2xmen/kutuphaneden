@@ -27,3 +27,11 @@ border-color: #444bff;
 a {
   color: black;
 }
+
+.fit {
+ 
+   /* object-fit: scale-down; */
+     object-fit: contain;  
+     /* object-fit: cover; */
+  
+}

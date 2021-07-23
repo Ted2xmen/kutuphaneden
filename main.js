@@ -24,13 +24,16 @@ function renderHTML(source){
         let featuredNews = source.filter(e => e.category === "news" && e.featured === true);
      
 
-        //for posts in main page
-        for(let i = post.length-2; i < post.length; i++) {
+        //for blog yazıları in main page
+        for(let i = post.length-9; i < post.length; i++) {
 
                     let blogItem = `
                     <li class="list-group-item">
-                        <img src="${post[i].image}" class="img-thumbnail" alt="${post[i].name}" style="width: 40px;">
-                        <a href="${post[i].url}">${post[i].name}</a>
+                        <img src="${post[i].image}" class="img-thumbnail" alt="${post[i].name}" style="width: 80px;">
+                        <a href="${post[i].url}" target="_blank">${post[i].name}</a>
+                         <span class="font-weight-bold badge badge-warning">${post[i].tags[0]}</span>
+                         <span class="font-weight-bold badge badge-info"> ${post[i].tags[1]}</span>
+                         <span class="font-weight-bold badge badge-success"> ${post[i].tags[2]}</span>
                     </li>
                                     `;
                     
@@ -39,20 +42,20 @@ function renderHTML(source){
                     blogContainer.insertAdjacentHTML("beforeend", blogItem);
         }; 
 
-        //for links in main page
-        for(let i = links.length-6; i < links.length; i++) {
+        //for internet siteleri in main page
+        for(let i = featuredLinks.length-6; i < featuredLinks.length; i++) {
 
                     let siteItem = `
 
-                    <div class="col-sm-2 col-md-2"> <a href="${links[i].url}"><img src="${links[i].image}" alt="${links[i].name}" class="hover img-thumbnail" style="width: 150%; height: 100%;"></a></div>  
+                    <div class="col-sm-2 col-md-2"> <a href="${featuredLinks[i].url}"><img src="${featuredLinks[i].image}" alt="${featuredLinks[i].name}" class="fit hover img-thumbnail " style="width: 150px; height: 100px;"></a></div>  
 
                                     `;
                     let siteContainer = document.querySelector('#links');
                     siteContainer.insertAdjacentHTML("beforeend", siteItem);
         };     
 
-        //for useful tools in main page featured-tool
-        for(let i = featuredTools.length-6; i < featuredTools.length; i++) {
+        //for faydalı araçlar in main page featured-tool
+        for(let i = featuredTools.length-3; i < featuredTools.length; i++) {
         let featuredToolItem = `
                         <div class="card"  >
                         <div class="card-body display-6">
@@ -80,11 +83,11 @@ function renderHTML(source){
         
         }; 
         
-        // main page haberler duyurular
+        // main page haberler & duyurular
         for(let i = featuredNews.length-4; i < featuredNews.length; i++) {
                     let newsItem = 
                                     `
-                                    <div class="col-sm-3 col-md-3"><a href="${featuredNews[i].url}"><img src="${featuredNews[i].image}" alt="${featuredNews[i].name}" class="hover img-thumbnail" style="width: 150%; height: 100%;"></a> </div> 
+                                    <div class="col-sm-3 col-md-3"><a href="${featuredNews[i].url}"><img src="${featuredNews[i].image}" alt="${featuredNews[i].name}" class="fit hover img-thumbnail" style="width: 150%; height: 100%;"></a> </div> 
                                     `;
                     let newsContainer = document.querySelector("#newsContainer");
                     newsContainer.insertAdjacentHTML("beforeend", newsItem);
