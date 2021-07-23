@@ -34,7 +34,7 @@
       },
       {
         "featured": true,
-        "category": "link",
+        "category": "news",
         "name": "HackerRank",
         "description": "Matching developers with great companies.",
         "url": "https://www.hackerrank.com/",
@@ -45,7 +45,18 @@
       },
       {
         "featured": true,
-        "category": "link",
+        "category": "news",
+        "name": "CodePen",
+        "description": "Build, share, and learn JavaScript, CSS, and HTML with our online code editor.",
+        "url": "https://codepen.io/",
+        "rating": "⭐⭐⭐⭐⭐",
+        "tags": ["ProductHunt", "tools", "products", "hunters"],
+        "tools": true,
+        "image": "https://cdn-images-1.medium.com/max/2600/1*UGT1Rh9xLww3JeIDR1F0RQ.png"
+      },
+      {
+        "featured": true,
+        "category": "news",
         "name": "CodePen",
         "description": "Build, share, and learn JavaScript, CSS, and HTML with our online code editor.",
         "url": "https://codepen.io/",
@@ -56,18 +67,7 @@
       },
       {
         "featured": true,
-        "category": "link",
-        "name": "CodePen",
-        "description": "Build, share, and learn JavaScript, CSS, and HTML with our online code editor.",
-        "url": "https://codepen.io/",
-        "rating": "⭐⭐⭐⭐⭐",
-        "tags": ["ProductHunt", "tools", "products", "hunters"],
-        "tools": true,
-        "image": "https://spiralking.com/wp-content/uploads/2019/04/code4.png"
-      },
-      {
-        "featured": true,
-        "category": "link",
+        "category": "news",
         "name": "CodePen",
         "description": "Build, share, and learn JavaScript, CSS, and HTML with our online code editor.",
         "url": "https://codepen.io/",

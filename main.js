@@ -12,7 +12,7 @@ ourRequest.send();
 
 function renderHTML(source){
 
-    // data category : link, bootcamp, post, 
+    // data category : link, bootcamp, post, news(+duyurular)
         let featured = source.filter(e => e.featured === true);
         let links = source.filter(e => e.category === "link");
         let bootcamps = source.filter(e => e.category === "bootcamp");
@@ -21,7 +21,8 @@ function renderHTML(source){
         let featuredBootcamps = source.filter(e => e.featured === true && e.category === "bootcamp");
         let featuredLinks = source.filter(e => e.featured === true && e.category === "link");
         let featuredTools = source.filter(e => e.tools === true && e.featured === true);
-        console.log(featuredTools);
+        let featuredNews = source.filter(e => e.category === "news" && e.featured === true);
+     
 
         //for posts in main page
         for(let i = post.length-2; i < post.length; i++) {
@@ -43,21 +44,19 @@ function renderHTML(source){
 
                     let siteItem = `
 
-                    <div class="col-sm-2 col-md-2"> <a href="${links[i].url}"><img src="${links[i].image}" alt="${links[i].name}" class="hover img-thumbnail"style="width: 200px; weight: 200px;"></a></div>  
+                    <div class="col-sm-2 col-md-2"> <a href="${links[i].url}"><img src="${links[i].image}" alt="${links[i].name}" class="hover img-thumbnail" style="width: 150%; height: 100%;"></a></div>  
 
                                     `;
                     let siteContainer = document.querySelector('#links');
                     siteContainer.insertAdjacentHTML("beforeend", siteItem);
         };     
-        
 
-        //for tools in main page
-
+        //for useful tools in main page featured-tool
         for(let i = featuredTools.length-6; i < featuredTools.length; i++) {
         let featuredToolItem = `
                         <div class="card"  >
                         <div class="card-body display-6">
-                        <span><img src="${featuredTools[i].image}" alt="" style="width: 50px;"></span> <a href="${featuredTools[i].url}">${featuredTools[i].name}</a>
+                        <span><img src="${featuredTools[i].image}" alt="" style="width: 50px;"></span> <a href="${featuredTools[i].url}" target="_blank">${featuredTools[i].name}</a>
                         </div>
                         </div>
                             `;
@@ -67,50 +66,61 @@ function renderHTML(source){
 
         }; 
 
-
-
-        // link list linkler sayfasındaki
-        for(let i = 0; i < links.length; i++) {
-
-                let linkler = `
+        // main page - bootcamps carousel 
+        for (let i = 0; i < bootcamps.length; i++) {
+                let bootcampItem = `
+        
+                    <div class="carousel-item">
+                        <img src="${bootcamps[i].image}" class="d-block w-100" alt="${bootcamps[i].name}">
+                    </div>  `; 
+        
                 
-                <li class=""> 
-                <div class="card "> 
-                        <div class="m-1 display-6  p-3">
-                        <span><img src="${links[i].image}" alt="" class="m-1 " style="width: 15%;"></span> 
-                        <a href="${links[i].url}">${links[i].name}</a> 
-                        <span>⭐⭐⭐⭐⭐</span> 
-                        <span class="badge bg-success">Linkler</span>
-                        <span class="badge bg-info text-dark">Framework</span>
-                        <p class="m-1 ">The definitive source of the best
-                            JavaScript libraries, frameworks, and plugins Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.. </p>
-                        </div>
-                </div> 
-            </li>
+                    let carousel = document.querySelector(".bootcamplist");
+                    carousel.insertAdjacentHTML("beforeend", bootcampItem);
+        
+        }; 
+        
+        // main page haberler duyurular
+        for(let i = featuredNews.length-4; i < featuredNews.length; i++) {
+                    let newsItem = 
+                                    `
+                                    <div class="col-sm-3 col-md-3"><a href="${featuredNews[i].url}"><img src="${featuredNews[i].image}" alt="${featuredNews[i].name}" class="hover img-thumbnail" style="width: 150%; height: 100%;"></a> </div> 
+                                    `;
+                    let newsContainer = document.querySelector("#newsContainer");
+                    newsContainer.insertAdjacentHTML("beforeend", newsItem);
+        
+        
+        };
+
+
+        // link list linkler sayfasındaki to do
+    //     for(let i = 0; i < links.length; i++) {
+
+    //             let linkler = `
                 
-                `;
-                let linkList = document.querySelector("#linkList");
-                linkList.insertAdjacentHTML("beforeend", linkler);
-                console.log(linkList);
+    //             <li class=""> 
+    //             <div class="card "> 
+    //                     <div class="m-1 display-6  p-3">
+    //                     <span><img src="${links[i].image}" alt="" class="m-1 " style="width: 15%;"></span> 
+    //                     <a href="${links[i].url}">${links[i].name}</a> 
+    //                     <span>⭐⭐⭐⭐⭐</span> 
+    //                     <span class="badge bg-success">Linkler</span>
+    //                     <span class="badge bg-info text-dark">Framework</span>
+    //                     <p class="m-1 ">The definitive source of the best
+    //                         JavaScript libraries, frameworks, and plugins Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.. </p>
+    //                     </div>
+    //             </div> 
+    //         </li>
+                
+    //             `;
+    //             let linkList = document.querySelector("#linkList");
+    //             linkList.insertAdjacentHTML("beforeend", linkler);
+    //             console.log(linkList);
 
 
-    };
+    // };
 
-    // FOR LOOP 
-    // for (let i = 0; i < source.length; i++) {
-    //     let bootcamps = `
 
-    //         <div class="carousel-item">
-    //              <img src="${source[i].image}" class="d-block w-100" alt="${source[i].name}">
-    //         </div>  `; 
-
-    //     let bootcampTitle = document.querySelector(".bootcampJson"); 
-    //     bootcampTitle.innerHTML = `Başvuruya Açık <a href="https://www.patika.dev/bootcamp" target="_blank" class="badge badge-warning"> ${source.length} Bootcamp</a> Var`;
-
-    //     let carousel = document.querySelector(".bootcamplist");
-    //     carousel.insertAdjacentHTML("beforeend", bootcamps);
-
-    
 
     // // Card Bölümü
     //     let javaScript = `
