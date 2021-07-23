@@ -19,12 +19,12 @@ function renderHTML(source){
 
         // let r = Math.floor(Math.random() * source.length);
         // for blog
-console.log(links);
+
 
 
         
         // for blog yazıları
-        for(let i = blog.length-7; i < blog.length; i++) {
+        for(let i = blog.length-12; i < blog.length; i++) {
 
             let blogItem = `
             <li class="list-group-item">
@@ -33,6 +33,7 @@ console.log(links);
           </li>
                             `;
             let blogContainer = document.querySelector('#blog-post');
+            console.log(blogContainer);
             blogContainer.insertAdjacentHTML("beforeend", blogItem);
 }; 
 
