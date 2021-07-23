@@ -1,7 +1,6 @@
 // data comes from the JSON
-
 let ourRequest = new XMLHttpRequest();
-ourRequest.open("GET", "db.json", true);
+ourRequest.open("GET", "data.json", true);
 ourRequest.onload = function() {
     let ourData = JSON.parse(ourRequest.responseText);
     renderHTML(ourData);
@@ -9,51 +8,93 @@ ourRequest.onload = function() {
 };
 ourRequest.send();
 // data comes from the JSON
-
+// let r = Math.floor(Math.random() * source.length);
 
 function renderHTML(source){
 
-        let blog = source.filter(e => e.blog === true);
-        // console.log(blog);
-         let links = source.filter(e => e.link === true);
-
-        // let r = Math.floor(Math.random() * source.length);
-        // for blog
-
-
-
+    // data category : link, bootcamp, post, 
+        let featured = source.filter(e => e.featured === true);
+        let links = source.filter(e => e.category === "link");
+        let bootcamps = source.filter(e => e.category === "bootcamp");
+        let post = source.filter(e => e.category === "post");
         
-        // for blog yazıları
-        for(let i = blog.length-12; i < blog.length; i++) {
+        let featuredBootcamps = source.filter(e => e.featured === true && e.category === "bootcamp");
+        let featuredLinks = source.filter(e => e.featured === true && e.category === "link");
+        let featuredTools = source.filter(e => e.tools === true && e.featured === true);
+        console.log(featuredTools);
 
-            let blogItem = `
-            <li class="list-group-item">
-            <img src="${blog[i].image}" class="img-thumbnail" alt="${blog[i].name}" style="width: 40px;">
-            <a href="${blog[i].url}">${blog[i].name}</a>
-          </li>
-                            `;
-            let blogContainer = document.querySelector('#blog-post');
-            console.log(blogContainer);
-            blogContainer.insertAdjacentHTML("beforeend", blogItem);
-}; 
+        //for posts in main page
+        for(let i = post.length-2; i < post.length; i++) {
 
-        //for internet siteleri
+                    let blogItem = `
+                    <li class="list-group-item">
+                        <img src="${post[i].image}" class="img-thumbnail" alt="${post[i].name}" style="width: 40px;">
+                        <a href="${post[i].url}">${post[i].name}</a>
+                    </li>
+                                    `;
+                    
+                    let blogContainer = document.querySelector('#blog-post');
+                    console.log(blogContainer);
+                    blogContainer.insertAdjacentHTML("beforeend", blogItem);
+        }; 
 
-            for(let i = links.length-6; i < links.length; i++) {
+        //for links in main page
+        for(let i = links.length-6; i < links.length; i++) {
 
                     let siteItem = `
 
                     <div class="col-sm-2 col-md-2"> <a href="${links[i].url}"><img src="${links[i].image}" alt="${links[i].name}" class="hover img-thumbnail"style="width: 200px; weight: 200px;"></a></div>  
 
-
                                     `;
                     let siteContainer = document.querySelector('#links');
                     siteContainer.insertAdjacentHTML("beforeend", siteItem);
-            };     
+        };     
         
 
+        //for tools in main page
+
+        for(let i = featuredTools.length-6; i < featuredTools.length; i++) {
+        let featuredToolItem = `
+                        <div class="card"  >
+                        <div class="card-body display-6">
+                        <span><img src="${featuredTools[i].image}" alt="" style="width: 50px;"></span> <a href="${featuredTools[i].url}">${featuredTools[i].name}</a>
+                        </div>
+                        </div>
+                            `;
+
+            let featuredToolsContainer = document.querySelector("#featuredTools");
+            featuredToolsContainer.insertAdjacentHTML("beforeend", featuredToolItem);
+
+        }; 
 
 
+
+        // link list linkler sayfasındaki
+        for(let i = 0; i < links.length; i++) {
+
+                let linkler = `
+                
+                <li class=""> 
+                <div class="card "> 
+                        <div class="m-1 display-6  p-3">
+                        <span><img src="${links[i].image}" alt="" class="m-1 " style="width: 15%;"></span> 
+                        <a href="${links[i].url}">${links[i].name}</a> 
+                        <span>⭐⭐⭐⭐⭐</span> 
+                        <span class="badge bg-success">Linkler</span>
+                        <span class="badge bg-info text-dark">Framework</span>
+                        <p class="m-1 ">The definitive source of the best
+                            JavaScript libraries, frameworks, and plugins Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur.. </p>
+                        </div>
+                </div> 
+            </li>
+                
+                `;
+                let linkList = document.querySelector("#linkList");
+                linkList.insertAdjacentHTML("beforeend", linkler);
+                console.log(linkList);
+
+
+    };
 
     // FOR LOOP 
     // for (let i = 0; i < source.length; i++) {
