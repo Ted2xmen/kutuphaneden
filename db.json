@@ -277,6 +277,149 @@
       "image": "assets/medium.png"
     },
     {
+      "featured": false,
+      "category": "post",
+      "name": "Yazılım Kariyerine Başlangıç Rehberi",
+      "description": "Teknoloji alanında iş bulmak istiyorum, nereden ve nasıl başlamalıyım?",
+      "url": "https://www.patika.dev/blog/yazilim-kariyerine-baslangic-rehberi",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["patika", "okuma listesi", "yeni başlayanlar"],
+      "tools": false,
+      "image": "https://uploads-ssl.webflow.com/6097e0eca1e875de53031ff6/60d91f3e6b838033ea3fa2e6_lfTrpq2.gif"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Javascript — Call,Apply ve Bind Fonksiyonları",
+      "description": "",
+      "url": "https://medium.com/yaz%C4%B1l%C4%B1m-bilimi/javascript-call-apply-ve-bind-fonksiyonlar%C4%B1-3b0242fbc7dd",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "okuma listesi", "javascript"],
+      "tools": false,
+      "image": "assets/medium.png"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Modules-2 (npm Nedir?)",
+      "description": "",
+      "url": "https://medium.com/frontend-development-with-js/npm-nedir-8f41305ea9a4",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "npm", "araçlar"],
+      "tools": false,
+      "image": "https://cdn.freebiesupply.com/logos/thumbs/2x/npm-logo.png"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "İşimiz Gücümüz Sorun Çözme (Troubleshooting)",
+      "description": "",
+      "url": "https://medium.com/t%C3%BCrkiye/i%CC%87%C5%9Fimiz-g%C3%BCc%C3%BCm%C3%BCz-sorun-%C3%A7%C3%B6zme-troubleshooting-fbe66494a5bf",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "yeni başlayanlar", "testing"],
+      "tools": false,
+      "image": "https://miro.medium.com/max/1400/1*Eh-eznNhMzsFyuvMoqFI5A.png"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Unit Test Nedir ? Unit Test’in Projelerimiz için Önemi Nedir ?",
+      "description": "",
+      "url": "https://medium.com/t%C3%BCrkiye/unit-test-nedir-unit-testin-projelerimiz-i%C3%A7in-%C3%B6nemi-nedir-ce23e16ce4d7",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "test"],
+      "tools": false,
+      "image": "assets/medium.png"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Yeni Başlayanlar İçin: Yazılımcının Galaksi Rehberi",
+      "description": "",
+      "url": "https://denizirgin.com/yeni-ba%C5%9Flayanlar-i%CC%87%C3%A7in-yaz%C4%B1l%C4%B1mc%C4%B1n%C4%B1n-galaksi-rehberi-3bedbc0e26c1",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "test"],
+      "tools": false,
+      "image": "https://miro.medium.com/max/1400/0*fSaQj-8wwPOoopYg"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Yazılımcılığa Psikolojik(!) Olarak Hazırlanmak",
+      "description": "",
+      "url": "https://medium.com/t%C3%BCrkiye/yaz%C4%B1l%C4%B1mc%C4%B1l%C4%B1%C4%9Fa-psikolojik-olarak-haz%C4%B1rlanmak-3ec344ed773c",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "yeni başlayanlar"],
+      "tools": false,
+      "image": "https://miro.medium.com/max/1400/1*QODhgo3IMCCE_RcLo10sIg.jpeg"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Az Kodla Haftasonu Projesi: Landing Page Checklist",
+      "description": "",
+      "url": "https://medium.com/t%C3%BCrkiye/az-kodla-haftasonu-projesi-landing-page-checklist-tailwindcss-f852ff6e297",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "proje"],
+      "tools": false,
+      "image": "https://miro.medium.com/max/2000/1*cEo6pl-KcNOsCvZK-jj27w.png"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Programlama Öğrenmek için En İyi Yollardan Biri: Yazılım Blogları",
+      "description": "",
+      "url": "https://talentgrid.io/yazilim-bloglari/",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["talentgrid", "blog", ""],
+      "tools": false,
+      "image": "https://talentgrid.io/wp-content/uploads/2019/07/talentgrid_logo_dark-1.png"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Front End Developer Yol Haritası (2021)",
+      "description": "",
+      "url": "https://medium.com/kodluyoruz/front-end-developer-yol-haritas%C4%B1-2021-aec043de1b28",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "yeni başlayanlar", "okuma listesi"],
+      "tools": false,
+      "image": "https://miro.medium.com/max/2000/1*m82z88qUTIP-YuZRe-VHcw.jpeg"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Türkiye’deki teknoloji bültenleri ve podcastleri",
+      "description": "",
+      "url": "https://medium.com/@GorkemCetin/t%C3%BCrkiyedeki-teknoloji-b%C3%BCltenleri-ve-teknoloji-podcastleri-1744f5d32222",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "yeni başlayanlar", "okuma listesi"],
+      "tools": false,
+      "image": "https://miro.medium.com/max/2000/1*gznz7neU1S72khVCXFlmrA.jpeg"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Javascriptin en gıcık konuları: Webpack, Babel, Eslint ve Diğerleri",
+      "description": "",
+      "url": "https://medium.com/@GorkemCetin/t%C3%BCrkiyedeki-teknoloji-b%C3%BCltenleri-ve-teknoloji-podcastleri-1744f5d32222",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "es6" , "babel"],
+      "tools": false,
+      "image": "https://miro.medium.com/max/1276/1*PFDFHEJZiETncPczyBVJOQ.jpeg"
+    },
+    {
+      "featured": false,
+      "category": "post",
+      "name": "Modern Front-End Yaklaşımı",
+      "description": "",
+      "url": "https://oguzkilic.medium.com/modern-front-end-yakla%C5%9F%C4%B1m%C4%B1-88f34057402a",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["medium", "react" , "javascript"],
+      "tools": false,
+      "image": "https://miro.medium.com/max/1200/1*1nkfO6sqTP2dJO4c4svAhw.jpeg"
+    },
+    {
       "featured": true,
       "category": "link",
       "name": "Haikei",
@@ -308,6 +451,17 @@
       "tags": ["api", "koleksiyon", "projeler"],
       "tools": false,
       "image": ""
+    },
+    {
+      "featured": true,
+      "category": "news",
+      "name": "Github Öğrenci Paketi",
+      "description": "Generate unique SVG design assets",
+      "url": "https://education.github.com/pack",
+      "rating": "⭐⭐⭐⭐⭐",
+      "tags": ["api", "koleksiyon", "projeler"],
+      "tools": false,
+      "image": "https://github.blog/wp-content/uploads/2019/08/FBLinkedIn_ALL-PARTNERS.png?fit=1200%2C630"
     }
 
 

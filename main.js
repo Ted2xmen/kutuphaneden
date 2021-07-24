@@ -28,32 +28,31 @@ function renderHTML(source){
 
 
 // main page haberler & duyurular
-for(let i = news.length-1; i < news.length; i++) {
-    console.log(news);
+// for(let i = news.length-2; i < news.length; i++) {
+//     console.log(news);
 
-    let newsItem = `
-                <div class="col-sm-4 col-md-4   hover shadow-none card  border border-warning" >
-                        <div class="card-body p-2 ">
-                        <h5 class="card-title"><img src="${news[i].image}" alt="..." class="img-thumbnail" style="width: 30%;"></h5>
-                        <p class="card-text">${news[i].name}</p>
-                        <a href="${news[i].url}" class="btn" >
-                        </a>
-                        </div>
-                </div>
-                    `;
+//     let newsItem = `
+//                 <div class="col-sm-4 col-md-4   hover shadow-none card  border border-warning" >
+//                         <div class="card-body p-2 ">
+//                         <h5 class="card-title"><img src="${news[i].image}" alt="..." class=" fit" style="width: 130px;"></h5>
+//                         <a href="${news[i].url}" target="_blank" class="btn bg-warning" > <p class="card-text">${news[i].name}</p>
+//                         </a>
+//                         </div>
+//                 </div>
+//                     `;
 
-    let newsContainer = document.querySelector("#newsContainer");
-    newsContainer.insertAdjacentHTML("beforeend", newsItem);
+//     let newsContainer = document.querySelector("#newsContainer");
+//     newsContainer.insertAdjacentHTML("beforeend", newsItem);
 
 
-};
+// };
 
 //for blog yazıları in main page
-for(let i = post.length-2; i < post.length; i++) {
+for(let i = post.length-11; i < post.length; i++) {
    
                     let blogItem = `
                     <li class="list-group-item">
-                        <img src="${post[i].image}" class="img-thumbnail" alt="${post[i].name}" style="width: 80px;">
+                        <img src="${post[i].image}" class="img-thumbnail" alt="${post[i].name}" style="width: 7%;">
                         <a href="${post[i].url}" target="_blank">${post[i].name}</a>
                          <span class="font-weight-bold badge badge-warning">${post[i].tags[0]}</span>
                          <span class="font-weight-bold badge badge-info"> ${post[i].tags[1]}</span>
